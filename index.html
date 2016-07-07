@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Singapore Tourist Attractions</title>
+        
+        <!-- Bootstrap CDN for styles-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        
+        <!-- CSS Stylesheet -->
+        <link rel="stylesheet" href="css/style.css">
+        
+        <!-- Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Passion+One:400,700' rel='stylesheet' type='text/css'>
+
+        <!-- JQuery CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <!-- Boostrap CDN js -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    </head>
+
+    <body>
+        <!-- Container START -->
+        <div class="container">
+            <!-- Heading of the page START -->
+            <div class="row text-center">
+                    <h1 class="heading">Singapore Tourist Attractions</h1>
+            </div>
+            <!-- Heading of the page END -->
+
+            <!-- Contents START -->
+            <!-- When the viewport is larger than 1200 -->
+                <!-- The search input and locations list will be on the left -->
+                <!-- Map will be displayed on the right -->
+            <!-- When the viewport is smaller than 1200 -->
+                <!-- The search input and locations list will be above the map -->
+                <!-- Map will be displayed below the list -->
+            <div class="row">
+                <!-- Search input and locations list START-->
+                <div class="col-lg-4 col-xs-12 listDiv">
+                    <!-- Search input -->
+                    <input id="search-box" type="search" data-bind="value: query, valueUpdate: 'keyup'" placeholder="Search Locations" autocomplete="off">
+
+                    <!-- Locations list -->
+                    <ul class="list-group" data-bind="foreach: searchResults">
+                        <li class="list-group-item col-xs-6 col-sm-6 col-lg-12 text-center" id="list" data-bind="text:name, click:$parent.list"></li>
+                    </ul>
+                </div>
+                <!-- Search input and locations list END-->
+
+                <!-- Map START -->
+                <div class="col-sm-8 col-xs-8" id="map"></div>
+                <!-- Map END -->
+            </div>
+            <!-- Contents END -->
+        </div>
+        <!-- Container END -->
+
+        <!-- Knockout.js file -->
+        <script type="text/javascript" src="js/knockout-3.4.0.js"></script>
+        <!-- My own JavaScript file -->
+        <script type="text/javascript" src="js/app.js"></script>
+        <!-- Google maps API and key -->
+        <script async defer src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyAy0pUV1Q9og-HS38jH1HME9yNS_7aKzJo&callback=initializeMap" onerror="googleErr()"></script>
+    </body>
+</html>
