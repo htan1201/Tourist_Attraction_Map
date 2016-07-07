@@ -1,20 +1,20 @@
 # Neighbourhood Map project
 -------------
 ## Objectives:
- *To create an App to show at least 5 locations on a map using google maps.
- *To have the list of locations by the side of the map on a wide screen and above the map when the viewport gets smaller.
- *To have a search function to filter out the listed locations.
+ * To create an App to show at least 5 locations on a map using google maps.
+ * To have the list of locations by the side of the map on a wide screen and above the map when the viewport gets smaller.
+ * To have a search function to filter out the listed locations.
 -------------
 ## Step by step process to complete this project:
 ### 1. General things
-*Download the required CDNs and files:
- *[Knockout.js](http://knockoutjs.com/downloads/index.html)
- *[JQuery](http://jquery.com/download/)
-*Set up google account to get the API key.
+* Download the required CDNs and files:
+ * [Knockout.js](http://knockoutjs.com/downloads/index.html)
+ * [JQuery](http://jquery.com/download/)
+* Set up google account to get the API key.
 
 ### 2. Setting up HTML document
-*Set up the general parts of the HTML document, such as `<!DOCTYPE>`, `<head>`, `<body>`.
-*Add the `<script>` and `<link>` styles for all that is required, such as Bootstrap, Knockout, JQuery and Google Maps.
+* Set up the general parts of the HTML document, such as `<!DOCTYPE>`, `<head>`, `<body>`.
+* Add the `<script>` and `<link>` styles for all that is required, such as Bootstrap, Knockout, JQuery and Google Maps.
 
 ### 3. Getting the datas ready
 In this project, I have used variable `locations` as an array that contains objects of the real place locations. The object comprises of:
