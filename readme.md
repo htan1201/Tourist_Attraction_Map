@@ -1,9 +1,9 @@
 # Neighbourhood Map project
 -------------
 ## Objectives:
+ * To have a search function to filter out the listed locations.
  * To create an App to show at least 5 locations on a map using google maps.
  * To have the list of locations by the side of the map on a wide screen and above the map when the viewport gets smaller.
- * To have a search function to filter out the listed locations.
 -------------
 ## Step by step process to complete this project:
 ### 1. General things
